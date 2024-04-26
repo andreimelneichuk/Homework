@@ -122,7 +122,7 @@ int main() {
     setup_complete.criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.selectedPLMN_Identity = 1;
 
     // Установка dedicatedInfoNAS
-    uint8_t nas_info[] = {0x01, 0x02, 0x03}; // Пример значения
+    uint8_t nas_info[] = {0x01, 0x02, 0x03};
     setup_complete.criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.dedicatedInfoNAS.buf = nas_info;
     setup_complete.criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.dedicatedInfoNAS.size = sizeof(nas_info);
 
